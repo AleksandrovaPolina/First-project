@@ -1,0 +1,475 @@
+.main{
+    margin: auto;
+    width: 100%;
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
+}
+
+/* Верхний див с картинкой, заголовком и кнопкой */
+.main__wrapper{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../images/masterclassImg/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+@media screen and (max-width: 375px){
+    background-image: url(../../images/masterclassImg/background-mobile-version.png);
+}
+}
+
+/* Общие характеристики для всех h2 */
+.main__title{
+    font-family: $font-title;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+/* Заголовок h2 "Нам доверяют мебель с историей в 120 лет" */
+.first-page-title{
+    color: $color-light;
+    width: 80%;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    font-size: 40px;
+}
+@media screen and (max-width: 375px){
+    font-size: 32px;
+}
+}
+
+/* Общие характеристики для кнопки */
+.btn-mk{
+    height: 60px;
+    width: 328px;
+    cursor: pointer;
+}
+
+/* Кнопка "Смотреть мастер-классы" */
+.main__view-master-class{
+    background-color: $color-light;
+    color: #4c6D77;
+    font-family: $font-text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border: none;
+    margin-top: 5rem;
+@media screen and (max-width: 375px){
+    width: 300px;
+}
+}
+
+/* Кнопка "Смотреть мастер-классы" при наведении*/
+.main__view-master-class:hover{
+    background-color: #4c6D77;
+    color:$color-light;
+}
+
+/* Общие характеристики для большого дива в виде отступов и размеров */
+.main__work-examples{
+    width: 100%;
+    padding:7rem;
+    background-color: $bg-color-light;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    padding: 4rem;
+}
+@media screen and (max-width: 375px){
+    padding: 2rem;
+}
+}
+
+/* Заголовок h2 "Наши работы" */
+.title-our-works{
+    color: $color-title;
+@media screen and (min-width: 376px) and (max-width: 768px){
+        font-size: 40px;
+}
+@media screen and (max-width: 375px){
+        font-size: 32px;
+}
+}
+
+/* Див, объединяющий картинки до/после + кнопка */
+.main__img{
+    width: 100%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 2rem;
+@media screen and (max-width: 768px){
+    margin-top: 2rem;
+    } 
+}
+
+/* Каждый div с картинкой и подписью до/после */
+.main__img-before-after{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Параметры p (подписи для картинок) */
+.img-name{
+    color: $text-color-header;
+    font-family: $font-text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 103%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Параметры дива с кнопкой "Смотреть больше примеров" */
+.set-btn-examples{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+/* Параметры для кнопки "Смотреть больше примеров" */
+.main__examples{
+    background: $color-light-green;
+    color: $text-color-footer;
+    font-family: $font-text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border: none;
+@media screen and (max-width: 375px){
+    width: 300px;
+}
+}
+
+/* Параметры для кнопки "Смотреть больше примеров" при наведении */
+.main__examples:hover{
+    background-color: #678064;
+}
+
+/* Параметры для дива "Какие техники изучите на МК" */
+.main__technique-mc{
+padding-top: 5rem;
+}
+
+/* Заголовок h2 "Какие техники изучите на МК" */
+.technique{
+    color: $color-title;
+    margin-bottom: 2rem;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    font-size: 40px;
+}
+@media screen and (max-width: 375px){
+    font-size: 32px;
+}
+}
+
+/* Общий див для списка */
+.main__list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+/* Див для каждой отдельной позиции списка */
+.list-number{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+/* Отсутствие отступа у последнего элемента */
+.list-number:last-child{
+    margin-bottom: 0px;
+}
+
+/* Див, который создает кружочек для каждого элемента списка */
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-color-footer;
+    font-family: $font-text;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    background-color: $color-light-green;
+    margin-right: 2rem;
+    flex-shrink: 0;
+    position: relative;
+@media screen and (max-width: 768px){
+    font-size: 20px;
+}
+}
+
+/* Вертикальная линия между элементами списка */
+.vertical-circle::before{
+    content: " ";
+    width: 1px;
+    height: 3.7rem;
+    background-color: #C4C4C4;
+    position: absolute;
+    top:58px;
+}
+
+/* Параметры заголовка h3 */
+.main__subtitle{
+    color: #000;
+    font-family: $font-text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    @media screen and (max-width: 768px){
+    font-size: 14px;
+    }
+}
+
+/* Див с картинкой и заголовком */
+.main__about-second-life{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../../images/masterclassImg/laminate.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Заголовок h2 "Подари вторую жизнь старой мебели и сохрани историю вашей семьи" */
+.title-about-second-life{
+    width: 80%;
+    color: $color-light;
+    text-align: center;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    font-size: 40px;
+}
+@media screen and (max-width: 375px){
+    font-size: 32px;
+}
+}
+
+/* Общие характеристики для большого дива в виде отступов и размеров */
+.main__master-classes{
+    width: 100%;
+    padding:7rem;
+    background-color: $bg-color-light;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    padding: 4rem;
+}
+@media screen and (max-width: 375px){
+    padding: 2rem;
+}
+}
+
+/* Заголовок "Мастер-классы по реставрации мебели" */
+.mc-restoration{
+    color: $color-title;
+    @media screen and (min-width: 376px) and (max-width: 768px){
+        font-size: 40px;
+    }
+    @media screen and (max-width: 375px){
+        font-size: 32px;
+    }
+}
+
+/* Див, объединяющий картинки с мастер-классами */
+.main__mc-images{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
+    align-items: end;
+    justify-items: center;
+}
+
+/* Параметры p (подписи для картинок) */
+.mc-img-name{
+    color: $text-color-header;
+    font-family: $font-text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.about-mc-joinery{
+padding-top: 5rem;
+}
+
+/* Заголовок "Мастер-классы по столярному делу" */
+.joinery{
+    color: $color-title;
+    margin-bottom: 2rem;
+@media screen and (min-width: 376px) and (max-width: 768px){
+        font-size: 40px;
+}
+@media screen and (max-width: 375px){
+        font-size: 32px;
+}
+}
+
+/* Див, объединяющий картинки по столярному делу */
+.main__mc-joinery{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Див с картинкой + подпись */
+.main__about-joinery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Размеры картинок */
+.joinery-img{
+    max-width: 45vw;
+    max-height: 45vh;
+}
+
+/* Параметры p (подписи для картинок) */
+.joinery-img-name{
+    color: $text-color-header;
+    font-family: $font-text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 1rem;
+    max-width: 45vw;
+@media screen and (max-width: 768px){
+    font-size: 0.8rem;
+}
+}
+
+/* Див, объединяющий инфу по редизайну */
+.main__redesign{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+@media screen and (max-width: 768px){
+    display: none;
+}
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Заголовок "Руководство по редизайну деревянной мебели" */
+.redesign{
+    color: $color-title;
+    font-size: 3vw;
+}
+
+/* Параграф */
+.about-redesign{
+    color: #000;
+    font-family: $font-text;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    @media screen and (max-width: 768px){
+    font-size: 18px;
+    }
+}
+
+/* Параметры кнопки "Подробнее"*/
+.details{
+    width: 245px;
+    height: 60px;
+    background-color: $color-light-green;
+    color: $color-light;
+    font-family: $font-text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка при наведении курсора */
+.details:hover{
+    background-color: #678064;
+}
+
+/* Параметры для картинки */
+.redesign-img{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+/* Див, объединяющий инфу по редизайну для планшетной и мобильной версии (для перестройки структуры) */
+.main__redesign-tablet-version{
+    margin-top: 2rem;
+@media screen and (min-width: 769px){
+    display: none;
+}
+}
+
+/* Параметры для заголовка h2 "Руководство по редизайну деревянной мебели" */
+.redesign-tablet-version{
+    margin-bottom: 2rem;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    font-size: 40px;
+}
+@media screen and (max-width: 375px){
+    font-size: 32px;
+}
+}
+
+.description-tablet-version{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Параметры для картинки */
+.redesign-img-tablet-version{
+    border: 1px solid black;
+    width: 100%;
+}
+
+/* Параметры для параграфа для компьютера и планшета */
+.tablet-version{
+@media screen and (max-width: 375px){
+    display: none;
+}
+}
+
+/* Параметры для параграфа для мобильной версии */
+.mobile-version{
+    @media screen and (min-width: 376px){
+    display: none;
+    }
+}

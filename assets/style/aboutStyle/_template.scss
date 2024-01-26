@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url(../aboutStyle/aboutFonts/OpenSans-VariableFont_wdth.ttf);
+}
+
+@font-face {
+  font-family:  'Tenor Sans', sans-serif;
+  src: url(./aboutFonts/TenorSans-Regular.ttf);
+}
+
+
+
+@mixin title ($font-size, $color) {
+  color: $color;
+  font-size: $font-size;
+  font-family:$font-title;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@mixin text ($font-size, $font-weight, $color) {
+  color: $color;
+  font-size: $font-size;
+  font-family: $font-text;
+  font-weight: $font-weight;
+  line-height: 150%;
+}
+
